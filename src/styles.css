@@ -1,0 +1,8 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+ background-color: #000000;
+}
+.main-content{
+	padding: 0 35px 0 35px;
+	font-family: Verdana, Geneva, sans-serif;
+}

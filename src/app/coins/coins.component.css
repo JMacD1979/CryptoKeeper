@@ -1,0 +1,34 @@
+.coins{
+	list-style-type: none;
+}
+.coins li{
+	background-color: #F4ED04;
+	min-width: 275px;
+	max-width: 500px;
+	border-radius: 5px;
+	padding: 5px;
+	margin: 10px;
+	border: 1px solid #000000;
+	cursor: pointer;
+	
+}
+
+.coins li:hover{
+	background-color: #F8FE95;
+}
+
+.coins li.selected{
+	background-color: #07DAE1;
+}
+.coins li.selected:hover{
+	background-color: #95FAFE;
+}
+
+.coinDetails{
+	border: 1px solid #020202 !important;
+	margin: 20px;
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #616060;
+	color: #ffffff;
+}

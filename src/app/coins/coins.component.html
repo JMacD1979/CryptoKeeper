@@ -1,0 +1,32 @@
+<h2>
+  {{splash}}
+</h2>
+
+<hr />
+
+<!--
+<div  *ngIf="selectedCoin">
+    <label>name:
+      <input [(ngModel)]="selectedCoin.name" placeholder="name">
+    </label>
+</div>
+-->
+
+<h4>My Coins</h4>
+<ul class="coins">
+  <li *ngFor="let coin of coins" 
+		(click)="onSelect(coin)"
+		[class.selected]="coin === selectedCoin">
+    <span class="coin">({{coin.symbol}})</span> {{coin.name}} | {{coin.price | currency:'USD'}} | Rank: {{coin.rank}}
+  </li>
+</ul>
+
+<hr />
+
+<div *ngIf="selectedCoin" class="coinDetails">
+	<h4>{{ selectedCoin.name }} Details</h4>
+	<div><span>Symbol: </span>{{selectedCoin.symbol}}</div>
+	<div><span>Name: </span>{{selectedCoin.name}}</div>
+	<div><span>Price: </span>{{selectedCoin.price | currency:'USD'}}</div>
+	<div><span>Rank: </span>{{selectedCoin.rank}}</div>
+</div>

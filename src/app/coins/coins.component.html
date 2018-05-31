@@ -11,6 +11,9 @@
     </label>
 </div>
 -->
+<div>
+	<app-coin-detail [coin]="selectedCoin"></app-coin-detail>
+</div>
 
 <h4>My Coins</h4>
 <ul class="coins">
@@ -23,10 +26,3 @@
 
 <hr />
 
-<div *ngIf="selectedCoin" class="coinDetails">
-	<h4>{{ selectedCoin.name }} Details</h4>
-	<div><span>Symbol: </span>{{selectedCoin.symbol}}</div>
-	<div><span>Name: </span>{{selectedCoin.name}}</div>
-	<div><span>Price: </span>{{selectedCoin.price | currency:'USD'}}</div>
-	<div><span>Rank: </span>{{selectedCoin.rank}}</div>
-</div>
